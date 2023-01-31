@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Formularios</title> 
+  <link rel="stylesheet" href="CSS/style.css">
+</head> 
+<body> 
+  <section> 
+    <form name="formulario" method="get" action="procesar.php">                                     <p><label>Nombre: <input type="text" name="nombre" maxlength="15"></label></p> 
+        <form name="formulario" method="get" action="procesar.php">   <p><label>Nombre: <input type="text" name="nombre" maxlength="15"></label></p> 
+            <p><label><input type="radio" name="edad" value="15" checked> 15 
+          Años</label></p> 
+            <p><label><input type="radio" name="edad" value="30"> 30 
+          Años</label></p> 
+            <p><label><input type="radio" name="edad" value="45"> 45 
+          Años</label></p> 
+            <p><label><input type="radio" name="edad" value="60"> 60 
+          Años</label></p> 
+            <p><input type="submit" value="Enviar"></p> </form> 
+      <p><label>Edad: <input type="number" name="edad"></label></p> 
+      <p><label>Correo: <input type="email" name="correo"></label></p> 
+      <p><label>Teléfono: <input type="tel" name="telefono"></label></p> 
+      <p><label>Sitio Web: <input type="url" name="sitioweb"></label></p> 
+      <p><input type="submit" value="Enviar"></p> 
+    </form> 
+    Edad: <input type="range" name="edad" min="13" max="100" value="35"><br>
+    <input type="color" name="micolor" value="#99BB00">
+    <input type="date" name="fecha" value="2017-02-05">
+    <form name="formulario" method="get" action="procesar.php">   <p><label>Texto: <textarea name="texto" cols="50" 
+        rows="6"></textarea></label></p> 
+          <p><input type="submit" value="Enviar"></p> </form> 
+          <form name="formulario" method="get" action="procesar.php"> 
+            <p> 
+              <label for="listado">JUEGOS: </label> 
+              <select name="juego" id="listado"> 
+                <option value="1">PACMAN</option> 
+                <option value="2">TURBO</option> 
+                <option value="3">El Resplandor</option> 
+                <option value="4">Misery</option> 
+              </select> 
+            </p> 
+            <p><input type="submit" value="Enviar"></p> </form> 
+            <form name="formulario" method="get" action="procesar.php"> 
+                <datalist id="datos"> 
+                  <option value="123123123" label="Teléfono 1"> 
+                  <option value="456456456" label="Teléfono 2"> 
+                </datalist> 
+                <p><label>Teléfono: <input type="tel" name="telefono" list="datos"></label></p> 
+                <p><input type="submit" value="Enviar"></p> </form> 
+                <meter value="60" min="0" max="100" low="40" high="80" optimum="100">60</meter>               
+  </section> 
+</body> 
+</html> 
